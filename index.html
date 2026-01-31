@@ -163,12 +163,9 @@
             background: radial-gradient(circle at 30% 50%, rgba(168, 181, 160, 0.2) 0%, transparent 60%);
         }
 
-        .image-placeholder {
-            color: var(--sage);
-            font-size: 1rem;
-            letter-spacing: 2px;
-            text-align: center;
-            font-weight: 300;
+        .hero-image img {
+            position: relative;
+            z-index: 1;
         }
 
         .cta-button {
@@ -321,6 +318,11 @@
             background: radial-gradient(circle at 50% 50%, rgba(168, 181, 160, 0.15) 0%, transparent 70%);
         }
 
+        .service-image img {
+            position: relative;
+            z-index: 1;
+        }
+
         .service-content h3 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.5rem;
@@ -449,7 +451,7 @@
             <button class="cta-button">BOOK YOUR ESCAPE</button>
         </div>
         <div class="hero-image">
-            <div class="image-placeholder">[ YOUR HERO IMAGE HERE ]</div>
+            <img src="images/hero.jpg" alt="Spa Atmosphere" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
     </section>
 
@@ -466,7 +468,7 @@
 
         <div class="service-card">
             <div class="service-image">
-                <div class="image-placeholder">[ DEEP TISSUE IMAGE HERE ]</div>
+                <img src="images/deep-tissue.jpg" alt="Deep Tissue Massage" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="service-content">
                 <h3>Deep Tissue Massage</h3>
@@ -476,7 +478,7 @@
 
         <div class="service-card">
             <div class="service-image">
-                <div class="image-placeholder">[ SWEDISH MASSAGE IMAGE HERE ]</div>
+                <img src="images/swedish.jpg" alt="Swedish Massage" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="service-content">
                 <h3>Swedish Massage</h3>
@@ -486,7 +488,7 @@
 
         <div class="service-card">
             <div class="service-image">
-                <div class="image-placeholder">[ AROMATHERAPY IMAGE HERE ]</div>
+                <img src="images/aromatherapy.jpg" alt="Aromatherapy Massage" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="service-content">
                 <h3>Aromatherapy Massage</h3>
@@ -496,7 +498,7 @@
 
         <div class="service-card">
             <div class="service-image">
-                <div class="image-placeholder">[ THAI MASSAGE IMAGE HERE ]</div>
+                <img src="images/thai.jpg" alt="Thai Massage" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="service-content">
                 <h3>Thai Massage</h3>
