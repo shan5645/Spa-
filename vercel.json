@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/providers",
+      "destination": "/providers.html"
+    }
+  ]
+}
