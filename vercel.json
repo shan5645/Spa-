@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/providers",
+      "destination": "/providers.html"
+    },
+    {
+      "source": "/providers-admin",
+      "destination": "/providers-admin.html"
+    }
+  ]
+}
