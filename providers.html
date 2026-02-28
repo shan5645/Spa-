@@ -640,7 +640,8 @@
     <!-- Firebase SDK -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
-        import { getFirestore, collection, getDocs, addDoc, updateDoc, deleteDoc, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+        import { getFirestore, collection, getDocs, addDoc, updateDoc, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-firestore.js";
+        import { getAuth, signInAnonymously, signOut } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
 
         // ---- YOUR FIREBASE CONFIG ----
         const firebaseConfig = {
@@ -655,6 +656,7 @@
 
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
+        const auth = getAuth(app);
 
         // PASSWORD CONFIGURATION
         const ADMIN_PASSWORD = 'admin2026';
@@ -737,6 +739,8 @@
             if (password === ADMIN_PASSWORD) {
                 isAdminMode = true;
                 localStorage.setItem('spaAccessMode', 'admin');
+                // Sign in anonymously so Firebase allows writes
+                try { await signInAnonymously(auth); } catch(e) { console.error('Auth error:', e); }
                 await loadTherapists();
                 showMainContent();
             } else if (password === VIEW_PASSWORD) {
@@ -754,6 +758,9 @@
             const mode = localStorage.getItem('spaAccessMode');
             if (mode === 'admin' || mode === 'view') {
                 isAdminMode = (mode === 'admin');
+                if (isAdminMode) {
+                    try { await signInAnonymously(auth); } catch(e) { console.error('Auth error:', e); }
+                }
                 await loadTherapists();
                 showMainContent();
             }
@@ -787,6 +794,7 @@
         window.logout = function() {
             localStorage.removeItem('spaAccessMode');
             isAdminMode = false;
+            if (auth.currentUser) signOut(auth);
             document.getElementById('loginScreen').style.display = 'flex';
             document.getElementById('mainContent').classList.remove('active');
             document.getElementById('password').value = '';
