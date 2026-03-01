@@ -1,0 +1,15 @@
+# robots.txt for serenityspa.co.in
+
+# Allow all search engines to crawl entire site
+User-agent: *
+Allow: /
+
+# Disallow admin/login pages (if any)
+Disallow: /admin
+Disallow: /login
+
+# Sitemap location
+Sitemap: https://www.serenityspa.co.in/sitemap.xml
+
+# Crawl-delay (optional - gives servers time to respond)
+Crawl-delay: 1
