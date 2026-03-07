@@ -1,15 +1,28 @@
 # robots.txt for serenityspa.co.in
+# Updated: March 7, 2026
 
-# Allow all search engines to crawl entire site
 User-agent: *
 Allow: /
-
-# Disallow admin/login pages (if any)
-Disallow: /admin
-Disallow: /login
+Allow: /blog/
+Allow: /providers
+Allow: /images/
 
 # Sitemap location
 Sitemap: https://www.serenityspa.co.in/sitemap.xml
 
-# Crawl-delay (optional - gives servers time to respond)
+# Allow all search engines to crawl
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow admin/private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of blog posts
+Allow: /blog/*.html
+
+# Crawl delay (optional - helps prevent server overload)
 Crawl-delay: 1
