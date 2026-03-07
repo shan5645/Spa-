@@ -4,7 +4,7 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://www.serenityspa.co.in/</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,29 +12,39 @@
   <!-- Providers Page -->
   <url>
     <loc>https://www.serenityspa.co.in/providers</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Service-specific pages (if you add them later) -->
+  <!-- Blog Post 1: Deep Tissue Benefits -->
   <url>
-    <loc>https://www.serenityspa.co.in/#services</loc>
-    <lastmod>2026-02-28</lastmod>
+    <loc>https://www.serenityspa.co.in/blog/deep-tissue-benefits.html</loc>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
+  <!-- Blog Post 2: Home Spa Preparation -->
+  <url>
+    <loc>https://www.serenityspa.co.in/blog/home-spa-preparation.html</loc>
+    <lastmod>2026-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Service Areas Section -->
   <url>
     <loc>https://www.serenityspa.co.in/#areas</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   
+  <!-- FAQ Section -->
   <url>
     <loc>https://www.serenityspa.co.in/#faq</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
