@@ -162,11 +162,7 @@
             --gold-accent: #C9A77C;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Montserrat', sans-serif;
@@ -176,7 +172,6 @@
             overflow-x: hidden;
         }
 
-        /* Header */
         header {
             background: linear-gradient(135deg, rgba(168, 181, 160, 0.15) 0%, rgba(212, 197, 176, 0.1) 100%);
             backdrop-filter: blur(10px);
@@ -233,15 +228,9 @@
             transition: width 0.3s ease;
         }
 
-        .nav-links a:hover {
-            color: var(--sage);
-        }
+        .nav-links a:hover { color: var(--sage); }
+        .nav-links a:hover::after { width: 100%; }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
         .hero {
             margin-top: 80px;
             padding: 6rem 3rem 4rem;
@@ -337,7 +326,6 @@
             box-shadow: 0 15px 40px rgba(168, 181, 160, 0.3);
         }
 
-        /* Doorstep Banner */
         .doorstep-banner {
             background: linear-gradient(135deg, var(--sage) 0%, var(--deep-sage) 100%);
             padding: 3rem;
@@ -378,7 +366,6 @@
             z-index: 1;
         }
 
-        /* Services Section */
         .services {
             max-width: 1400px;
             margin: 6rem auto;
@@ -472,7 +459,6 @@
             letter-spacing: 0.3px;
         }
 
-        /* Service Areas Section */
         .service-areas {
             max-width: 1400px;
             margin: 6rem auto;
@@ -530,7 +516,6 @@
             letter-spacing: 1px;
         }
 
-        /* FAQ Section */
         .faq-section {
             max-width: 1000px;
             margin: 6rem auto;
@@ -556,9 +541,7 @@
             transition: all 0.3s ease;
         }
 
-        .faq-item:hover {
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-        }
+        .faq-item:hover { box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); }
 
         .faq-item h3 {
             font-family: 'Montserrat', sans-serif;
@@ -576,7 +559,6 @@
             opacity: 0.85;
         }
 
-        /* WhatsApp Float Button */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -599,13 +581,8 @@
             box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
         }
 
-        .whatsapp-float svg {
-            width: 32px;
-            height: 32px;
-            fill: white;
-        }
+        .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
 
-        /* Footer */
         footer {
             background: linear-gradient(135deg, var(--deep-sage) 0%, var(--sage) 100%);
             color: var(--white);
@@ -631,8 +608,7 @@
             letter-spacing: 2px;
         }
 
-        .footer-section p,
-        .footer-section a {
+        .footer-section p, .footer-section a {
             color: rgba(255, 255, 255, 0.9);
             font-size: 0.95rem;
             text-decoration: none;
@@ -656,10 +632,7 @@
         }
 
         @media (max-width: 968px) {
-            .hero {
-                grid-template-columns: 1fr;
-                padding: 4rem 2rem 2rem;
-            }
+            .hero { grid-template-columns: 1fr; padding: 4rem 2rem 2rem; }
             .hero-content h1 { font-size: 3rem; }
             .hero-image { height: 350px; }
             .service-card { grid-template-columns: 1fr; gap: 2rem; }
@@ -752,14 +725,14 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog-section" id="blog" style="max-width: 1400px; margin: 6rem auto; padding: 0 3rem;">
+    <section id="blog" style="max-width: 1400px; margin: 6rem auto; padding: 0 3rem;">
         <div style="text-align: center; margin-bottom: 4rem;">
             <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; color: #7A8B7F; margin-bottom: 1rem; font-weight: 300; letter-spacing: 3px;">Wellness Blog</h2>
             <p style="font-size: 1.1rem; color: #3A3A3A; opacity: 0.8; font-weight: 300; letter-spacing: 0.5px;">Expert guides on massage therapy, home spa tips, and wellness advice for Bangalore</p>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
-            
+
             <!-- Blog Post 1: Deep Tissue -->
             <div style="background: #FFFFFF; border-radius: 2px; overflow: hidden; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); transition: all 0.4s ease;">
                 <div style="height: 250px; background: linear-gradient(135deg, #A8B5A0 0%, #7A8B7F 100%); display: flex; align-items: center; justify-content: center; padding: 2rem;">
@@ -779,6 +752,17 @@
                 <div style="padding: 2rem;">
                     <p style="color: #3A3A3A; opacity: 0.85; margin-bottom: 1.5rem; line-height: 1.7; font-size: 1rem;">First time booking doorstep massage in Bangalore? Complete guide to preparing your space, what to expect from home massage service, and tips for the perfect experience.</p>
                     <a href="blog/home-spa-preparation.html" style="background: #A8B5A0; color: #FFFFFF; padding: 0.75rem 2rem; text-decoration: none; display: inline-block; border-radius: 2px; transition: all 0.3s; font-size: 0.9rem; letter-spacing: 1.5px; font-family: 'Montserrat', sans-serif;">READ MORE</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3: Spa at Home Guide -->
+            <div style="background: #FFFFFF; border-radius: 2px; overflow: hidden; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); transition: all 0.4s ease;">
+                <div style="height: 250px; background: linear-gradient(135deg, #A8B5A0 0%, #7A8B7F 100%); display: flex; align-items: center; justify-content: center; padding: 2rem;">
+                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: #FFFFFF; text-align: center; font-weight: 300; letter-spacing: 2px; line-height: 1.2;">Complete Spa<br>at Home Guide</h3>
+                </div>
+                <div style="padding: 2rem;">
+                    <p style="color: #3A3A3A; opacity: 0.85; margin-bottom: 1.5rem; line-height: 1.7; font-size: 1rem;">Female therapist, male therapist, couple massage, full body massage — everything you need to know about booking doorstep spa services in Bangalore.</p>
+                    <a href="blog/spa-at-home-guide.html" style="background: #A8B5A0; color: #FFFFFF; padding: 0.75rem 2rem; text-decoration: none; display: inline-block; border-radius: 2px; transition: all 0.3s; font-size: 0.9rem; letter-spacing: 1.5px; font-family: 'Montserrat', sans-serif;">READ MORE</a>
                 </div>
             </div>
 
@@ -815,7 +799,7 @@
     <!-- FAQ Section -->
     <section class="faq-section" id="faq">
         <h2>Frequently Asked Questions</h2>
-        
+
         <div class="faq-item">
             <h3>Do you provide doorstep massage service in Bangalore?</h3>
             <p>Yes! Serenity Spa provides professional doorstep massage services across all areas of Bangalore. Our certified therapists bring spa equipment and premium massage oils to your home, office, or hotel. We serve Koramangala, HSR Layout, Indiranagar, Whitefield, BTM Layout, JP Nagar, Marathahalli, Electronic City, and all other Bangalore localities.</p>
@@ -875,6 +859,7 @@
                 <a href="#services">Massage Services</a>
                 <a href="#areas">Service Areas</a>
                 <a href="#faq">FAQ</a>
+                <a href="careers.html">Join Our Team</a>
                 <a href="https://wa.me/919113611673?text=Hi%2C%20I%27d%20like%20to%20book%20a%20doorstep%20massage" target="_blank">Book Now</a>
             </div>
             <div class="footer-section">
