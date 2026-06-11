@@ -10,15 +10,13 @@
     <style>
         :root {
             --cream: #FAF7F2;
-            --soft-cream: #F5F1E8;
-            --warm-beige: #E8E2D8;
-            --deep-plum: #5D2E46;
-            --rich-plum: #6B2C42;
-            --light-plum: #8B4567;
-            --champagne-gold: #D4AF37;
-            --soft-gold: #E5C475;
-            --charcoal: #2C2C2C;
+            --soft-beige: #E8DFD0;
+            --warm-sand: #D4C5B0;
+            --sage: #A8B5A0;
+            --deep-sage: #7A8B7F;
+            --charcoal: #3A3A3A;
             --white: #FFFFFF;
+            --gold-accent: #C9A77C;
         }
 
         * {
@@ -41,7 +39,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--soft-cream) 0%, var(--cream) 100%);
+            background: linear-gradient(135deg, var(--soft-beige) 0%, var(--cream) 100%);
         }
 
         .login-box {
@@ -56,7 +54,7 @@
         .login-box h1 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2.5rem;
-            color: var(--deep-plum);
+            color: var(--deep-sage);
             margin-bottom: 0.5rem;
             text-align: center;
             font-weight: 300;
@@ -87,7 +85,7 @@
         .form-group textarea {
             width: 100%;
             padding: 0.8rem;
-            border: 1px solid var(--soft-cream);
+            border: 1px solid var(--soft-beige);
             border-radius: 2px;
             font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
@@ -97,7 +95,7 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: var(--champagne-gold);
+            border-color: var(--sage);
         }
 
         textarea {
@@ -107,7 +105,7 @@
 
         .login-btn {
             width: 100%;
-            background: var(--champagne-gold);
+            background: var(--sage);
             color: var(--white);
             padding: 1rem;
             border: none;
@@ -121,7 +119,7 @@
         }
 
         .login-btn:hover {
-            background: var(--deep-plum);
+            background: var(--deep-sage);
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(168, 181, 160, 0.3);
         }
@@ -156,7 +154,7 @@
         }
 
         header.admin-mode {
-            background: linear-gradient(135deg, var(--deep-plum) 0%, var(--champagne-gold) 100%);
+            background: linear-gradient(135deg, var(--deep-sage) 0%, var(--sage) 100%);
         }
 
         header.admin-mode .logo,
@@ -177,12 +175,12 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 2rem;
             font-weight: 300;
-            color: var(--deep-plum);
+            color: var(--deep-sage);
             letter-spacing: 3px;
         }
 
         .logout-btn {
-            background: var(--champagne-gold);
+            background: var(--sage);
             color: var(--white);
             padding: 0.6rem 1.5rem;
             border: none;
@@ -200,7 +198,7 @@
         }
 
         .logout-btn:hover {
-            background: var(--deep-plum);
+            background: var(--deep-sage);
         }
 
         header.admin-mode .logout-btn:hover {
@@ -233,7 +231,7 @@
             font-family: 'Cormorant Garamond', serif;
             font-size: 4rem;
             font-weight: 300;
-            color: var(--deep-plum);
+            color: var(--deep-sage);
             line-height: 1.2;
             margin-bottom: 1rem;
             letter-spacing: 3px;
@@ -255,14 +253,14 @@
             background: rgba(168, 181, 160, 0.2);
             border-radius: 25px;
             font-size: 0.9rem;
-            color: var(--deep-plum);
+            color: var(--deep-sage);
             font-weight: 500;
             letter-spacing: 1px;
         }
 
         .mode-badge.admin {
             background: rgba(122, 139, 127, 0.2);
-            color: var(--deep-plum);
+            color: var(--deep-sage);
         }
 
         /* Admin Controls */
@@ -278,7 +276,7 @@
         }
 
         .add-therapist-btn {
-            background: var(--champagne-gold);
+            background: var(--sage);
             color: var(--white);
             padding: 0.8rem 2rem;
             border: none;
@@ -292,7 +290,7 @@
         }
 
         .add-therapist-btn:hover {
-            background: var(--deep-plum);
+            background: var(--deep-sage);
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(168, 181, 160, 0.3);
         }
@@ -330,7 +328,7 @@
             height: 300px;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, var(--soft-cream) 0%, var(--warm-beige) 100%);
+            background: linear-gradient(135deg, var(--soft-beige) 0%, var(--warm-sand) 100%);
         }
 
         .carousel-track {
@@ -360,7 +358,7 @@
             justify-content: center;
             font-family: 'Cormorant Garamond', serif;
             font-size: 5rem;
-            color: var(--champagne-gold);
+            color: var(--sage);
             font-weight: 300;
         }
 
@@ -425,14 +423,14 @@
         .therapist-name {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2rem;
-            color: var(--deep-plum);
+            color: var(--deep-sage);
             margin-bottom: 0.5rem;
             font-weight: 400;
             letter-spacing: 1px;
         }
 
         .therapist-specialization {
-            color: var(--champagne-gold);
+            color: var(--sage);
             font-size: 0.95rem;
             margin-bottom: 1rem;
             font-weight: 500;
@@ -471,13 +469,13 @@
         }
 
         .btn-edit {
-            background: var(--champagne-gold);
+            background: var(--sage);
             color: var(--white);
             flex: 1;
         }
 
         .btn-edit:hover {
-            background: var(--deep-plum);
+            background: var(--deep-sage);
         }
 
         .btn-delete {
@@ -520,7 +518,7 @@
         .modal-header {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2rem;
-            color: var(--deep-plum);
+            color: var(--deep-sage);
             margin-bottom: 1.5rem;
             font-weight: 300;
         }
@@ -544,21 +542,21 @@
         }
 
         .btn-cancel {
-            background: var(--soft-cream);
+            background: var(--soft-beige);
             color: var(--charcoal);
         }
 
         .btn-cancel:hover {
-            background: var(--warm-beige);
+            background: var(--warm-sand);
         }
 
         .btn-save {
-            background: var(--champagne-gold);
+            background: var(--sage);
             color: var(--white);
         }
 
         .btn-save:hover {
-            background: var(--deep-plum);
+            background: var(--deep-sage);
         }
 
         .helper-text {
@@ -593,7 +591,7 @@
     <!-- Login Screen -->
     <div id="loginScreen" class="login-container">
         <div class="login-box">
-            <h1>VELVORA</h1>
+            <h1>SERENITY</h1>
             <p>Therapist Directory Access</p>
             <form id="loginForm">
                 <div class="form-group">
@@ -610,7 +608,7 @@
     <div id="mainContent" class="main-content">
         <header id="mainHeader">
             <nav>
-                <div class="logo" id="headerLogo">VELVORA - THERAPISTS</div>
+                <div class="logo" id="headerLogo">SERENITY - THERAPISTS</div>
                 <button class="logout-btn" onclick="logout()">LOGOUT</button>
             </nav>
         </header>
@@ -724,13 +722,13 @@
             
             if (isAdminMode) {
                 header.classList.add('admin-mode');
-                logo.textContent = 'VELVORA - ADMIN PANEL';
+                logo.textContent = 'SERENITY - ADMIN PANEL';
                 modeBadge.textContent = '● ADMIN MODE';
                 modeBadge.classList.add('admin');
                 adminControls.classList.add('show');
             } else {
                 header.classList.remove('admin-mode');
-                logo.textContent = 'VELVORA - THERAPISTS';
+                logo.textContent = 'SERENITY - THERAPISTS';
                 modeBadge.textContent = 'VIEW MODE';
                 modeBadge.classList.remove('admin');
                 adminControls.classList.remove('show');
@@ -954,4 +952,3 @@
     </script>
 </body>
 </html>
-
